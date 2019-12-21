@@ -1,0 +1,38 @@
+/* pages/main/main.wxss */
+.item-container{
+  display: flex;
+}
+.image{
+  width: 200rpx;
+  height: 200rpx;
+  flex: 1;
+}
+.content{
+  flex:2;
+}
+.title{
+  font-weight: blod;
+}
+.action{
+  flex: 1;
+}
+.tag{
+  padding: 0 5rpx;
+  background: red;
+  border-radius: 20%;
+  margin: 5rpx;
+  color: white;
+  font-size: 28rpx;
+}
+.cart{
+  padding: 5rpx;
+  background: red;
+  border-radius: 40%;
+  color: white;
+  width: 30rpx;
+  height: 30rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}

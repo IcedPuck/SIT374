@@ -1,0 +1,23 @@
+<!--pages/me/me.wxml-->
+<text>Me page</text>
+<view class="userinfo">
+  <button wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+  <block>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <!-- 用户头像及风格设定 -->
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <!-- 用户名称 -->
+    <!-- #注意{{userInfo.nickName}}为可以替换的名称 -->
+  </block>
+  <!-- bindtap是点击事件 -->
+</view>
+<!-- 需要添加点击事件 -->
+<view class="add_btn">
+  <!-- 跳转到已经购买的详细页面上 -->
+  <view class="viewItem">Order</view>
+  <!-- 跳转到用户联系方式页面 -->
+  <view class="viewItem">Email and Phone</view>
+  <!-- 跳转到客服 -->
+  <view class="viewItem">Service</view>
+  <view class="viewItem">Password Change</view>
+</view>

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+    <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+      <!-- 用户头像及风格设定 -->
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- 用户名称 -->
+      <!-- #注意{{userInfo.nickName}}为可以替换的名称 -->
+    </block>
+
+
+    <!-- bindtap是点击事件 -->
+  </view>
+  <view>
+    <button type="primary" bindtap="addImage">Add Item</button>
+    <button type="primary" bindtap="getImage">Get Item</button>
+  </view>
+</view>

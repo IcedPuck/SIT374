@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view>详情页面</view>
+  <view>{{info.title}}</view>
+  <view>{{info.price}}</view>
+  <button type="primary" bindtap="order">立即下单</button>
+</view>
+
