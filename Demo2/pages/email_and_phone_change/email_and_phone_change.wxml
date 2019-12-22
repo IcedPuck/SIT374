@@ -1,2 +1,13 @@
 <!--pages/email_and_phone_change/email_and_phone_change.wxml-->
-<text>pages/email_and_phone_change/email_and_phone_change.wxml</text>
+<view class="all">
+  <view class="view">
+    <text>Email：</text>
+    <input class="input"></input>
+  </view>
+  <view class="view">
+    <text>Phone number：</text>
+    <input class="input"></input>
+  </view>
+</view>
+<!-- 添加submit的数据代码功能实现 -->
+<button type="primary" class="button">Submit</button>

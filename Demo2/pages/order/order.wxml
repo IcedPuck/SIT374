@@ -1,2 +1,25 @@
 <!--pages/order/order.wxml-->
 <text>pages/order/order.wxml</text>
+<view class="add_btn">
+  <view>
+    <text>Client: {{userInfo.nickName}}</text>
+  </view>
+  <view>
+    <text>Couse: </text>
+  </view>
+  <view>
+    <text>Time: </text>
+  </view>
+  <view>
+    <text>Address: </text>
+  </view>
+  <view>
+    <view>
+      <text>Detail: </text>
+    </view>
+    <view class="detailView">
+      <text class="detail">12312314</text>
+    </view>
+
+  </view>
+</view>

@@ -1,1 +1,13 @@
 /* pages/order/order.wxss */
+.add_btn {
+  bottom: 30rpx;
+  position: fixed;
+  margin-bottom: 100rpx;
+}
+.detail{
+  border-width: 1rpx;
+  border-style: solid;
+}
+.detailView{
+  margin-left: 40rpx;
+}

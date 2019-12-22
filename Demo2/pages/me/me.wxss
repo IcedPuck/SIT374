@@ -37,7 +37,6 @@
   bottom: 30rpx;
   position: fixed;
   width: 100%;
-
 }
 
 .viewItem {

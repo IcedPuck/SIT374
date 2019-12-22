@@ -1,1 +1,20 @@
 /* pages/email_and_phone_change/email_and_phone_change.wxss */
+
+.input {
+  border: solid;
+  border-width: 1rpx;
+  width: 80%;
+  margin-left: 50rpx;
+  margin-top: 30rpx;
+  height: 60rpx;
+}
+.view{
+  margin-left: 40rpx;
+  margin-top: 100rpx;
+}
+.button {
+  margin-top: 350rpx;
+}
+.all{
+  margin-top: 50rpx;
+}
