@@ -5,8 +5,10 @@
     "pages/cart/cart",
     "pages/index/index",
     "pages/logs/logs",
-    
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/email_and_phone_change/email_and_phone_change",
+    "pages/service/service"
   ],
   "window": {
     "backgroundTextStyle": "light",

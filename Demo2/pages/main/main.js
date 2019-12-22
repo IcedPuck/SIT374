@@ -57,11 +57,14 @@ Page({
     wx.hideLoading()
   },
   toDetail(e) {
+    //获取现在所在任务的id
     const id = e.currentTarget.id
+    //跳转传参
     wx.navigateTo({
       url: '/pages/detail/detail?id=' + id,
       //如何传参数：用？传参的name和=然后， 后面加上e.currentTarget.id
     })
+    //如果只需要跳转啊就只需要使用wx.navigateTo({url:'地址就可以使用'})
     console.log(e)
   },
   /**
