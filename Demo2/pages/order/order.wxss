@@ -3,11 +3,11 @@
   bottom: 30rpx;
   position: fixed;
   margin-bottom: 100rpx;
-}
-.detail{
-  border-width: 1rpx;
-  border-style: solid;
+  margin-left: 100rpx;
 }
 .detailView{
   margin-left: 40rpx;
+}
+.list{
+  margin-top: 20rpx;
 }
