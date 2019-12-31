@@ -14,9 +14,9 @@
 <!-- 需要添加点击事件 -->
 <view class="add_btn">
   <!-- 跳转到已经购买的详细页面上 -->
-  <view class="viewItem" bindtap="toOrder">Order</view>
+  <button class="viewItem" bindtap="toOrder">Order</button>
   <!-- 跳转到用户联系方式页面 -->
-  <view class="viewItem" bindtap="toEP">Email and Phone</view>
+  <button class="viewItem" bindtap="toEP">Email and Phone</button>
   <!-- 跳转到客服 -->
-  <view class="viewItem" bindtap="toService">Service</view>
+  <button class="viewItem" open-type="contact">Service</button>
 </view>

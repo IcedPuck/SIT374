@@ -1,4 +1,6 @@
 // pages/email_and_phone_change/email_and_phone_change.js
+const app = getApp()
+const db = wx.cloud.database()
 Page({
 
   /**
@@ -8,6 +10,20 @@ Page({
 
   },
 
+  changeinfor(){
+    db.collection('EPDetail').add({
+      data:{
+        password:'00000000',
+        email:"123456789@123.com"
+      },
+      success: res=>{
+        console.log(res)
+        wx.showToast({
+          title: 'Add Success',
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

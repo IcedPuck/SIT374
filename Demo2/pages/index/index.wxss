@@ -25,6 +25,5 @@
   margin-bottom: 400rpx;
 }
 .button{
-  margin: 0 5rpx;
-  padding: 0 5rpx;
+  margin: 10rpx;
 }

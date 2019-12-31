@@ -47,4 +47,5 @@
   border-width: 1rpx;
   margin: 10rpx;
   padding: 30rpx;
+  width: 750rpx;
 }
