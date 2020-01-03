@@ -25,13 +25,6 @@ Page({
       url: '/pages/email_and_phone_change/email_and_phone_change',
     })
   },
-  //跳转到service页面
-  // 需要传参
-  toService(e) {
-    wx.navigateTo({
-      url: '/pages/service/service',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

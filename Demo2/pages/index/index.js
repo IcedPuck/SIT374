@@ -12,12 +12,14 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
+    //跳转到log获取登录信息
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
   //从数据库里面获取结果
   getImage(){
+    //从emall里面获取数据并打印到console
     db.collection('emall').get({
       success:(res)=>{
         console.log(res)
@@ -30,20 +32,20 @@ Page({
       count: 1,
       success: function(res) {
 
-        const filePath = res.tempFilePaths[0]
-        const tempFile = filePath.split('.')
+        const filePath = res.tempFilePaths[0]//获取现在缓存中的文件地址
+        const tempFile = filePath.split('.')//将获取到的filePath用‘.’来分开
         const cloudPath = 'my-image-' + tempFile[tempFile.length - 2]
         wx.cloud.uploadFile({
-          cloudPath,
-          filePath,//云存储里面唯一的标识
+          cloudPath,//上传了cloudPath
+          filePath,//云存储里面唯一的标识//上传了filePath
           success:res=>{
-            console.log(res.fileID)
+            console.log(res.fileID)//成功后打印fileID
             db.collection('emall').add({
               data: {
                 title: '商品1',
                 price: 18,
                 tags: ['book', 'food'],
-                image: res.fileID//添加文件的id
+                image: res.fileID//添加文件的id（就是地址）
               },
               // showToast当点击事件发生的时候出现弹窗 
               success: ret => {
@@ -70,18 +72,17 @@ Page({
       // showToast当点击事件发生的时候出现弹窗 
       success:res=>{
         console.log(res)
+        //小型弹窗
         wx.showToast({
           title: 'Add Success',
         })
       }
     })
-    // wx.showToast({
-    //   title: 'Add',
-    // })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
+        //获取现在globalData的userInfo
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
