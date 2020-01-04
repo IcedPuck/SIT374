@@ -1,5 +1,4 @@
 <!--pages/me/me.wxml-->
-<text>Me page</text>
 <view class="userinfo">
   <button wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
   <block>

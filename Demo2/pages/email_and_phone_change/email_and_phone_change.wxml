@@ -2,10 +2,12 @@
 <view class="all">
   <view class="view">
     <text>Email：</text>
+    <text>此处加载数据库内的数据</text>
     <input class="input"></input>
   </view>
   <view class="view">
-    <text>Phone number：</text>
+    <text>Phone：</text>
+    <text>此处加载数据库内的数据</text>
     <input class="input"></input>
   </view>
 </view>
