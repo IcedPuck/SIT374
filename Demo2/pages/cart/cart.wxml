@@ -1,19 +1,20 @@
 <!--pages/cart/cart.wxml-->
 <view class="" hover-class="none" hover-stop-propagation="false">
-  <view>cart</view>
-
   <view wx:for="{{carts}}" class="item-container">
+    <image class="image" src="{{item.image}}"></image>
     <view class="title">
       {{item.title}}
     </view>
-    <view class="cart" data-index="{{index}}" bindtap="minusCart">
-      -
-    </view>
-    <view class="action">
-      {{item.num}}
-    </view>
-    <view class="cart" data-index="{{index}}" bindtap="addCart">
-      +
+    <view class="action2">
+      <view class="cart" data-index="{{index}}" bindtap="minusCart">
+        -
+      </view>
+      <view class="action">
+        {{item.num}}
+      </view>
+      <view class="cart" data-index="{{index}}" bindtap="addCart">
+        +
+      </view>
     </view>
   </view>
   <view wx:if="{{address.userName}}">

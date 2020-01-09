@@ -1,15 +1,17 @@
 <!--pages/email_and_phone_change/email_and_phone_change.wxml-->
 <view class="all">
-  <view class="view">
-    <text>Email：</text>
-    <text>此处加载数据库内的数据</text>
-    <input class="input"></input>
-  </view>
-  <view class="view">
-    <text>Phone：</text>
-    <text>此处加载数据库内的数据</text>
-    <input class="input"></input>
-  </view>
+  <form bindsubmit="searchBox">
+    <view class="view">
+      <text>Email：</text>
+      <text>{{email}}</text>
+      <input class="input" name="email"></input>
+    </view>
+    <view class="view">
+      <text>Phone：</text>
+      <text>{{phone}}</text>
+      <input class="input" name="phone"></input>
+      <button type="primary" form-type="submit" class="button">Submit</button>
+    </view>
+  </form>
 </view>
 <!-- 添加submit的数据代码功能实现 -->
-<button type="primary" class="button">Submit</button>
