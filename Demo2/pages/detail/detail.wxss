@@ -1,1 +1,11 @@
 /* pages/detail/detail.wxss */
+.image{
+  width: 100%;
+  height: 200rpx;
+}
+.detail{
+  flex: 1;
+}
+.all{
+  display: flex;
+}

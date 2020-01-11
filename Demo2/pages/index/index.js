@@ -10,13 +10,13 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
-    //跳转到log获取登录信息
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  // //事件处理函数
+  // bindViewTap: function() {
+  //   //跳转到log获取登录信息
+  //   wx.navigateTo({
+  //     url: '../logs/logs'
+  //   })
+  // },
   //从数据库里面获取结果
   getImage(){
     //从emall里面获取数据并打印到console
@@ -60,25 +60,25 @@ Page({
       },
     })
   },
-  addMall(){
-    //这里可以看成数据库的写入
-    //数据库的连接是根据collection（‘数据库名字’）.add()去增加到指定数据库名字的数据库里面
-    db.collection('emall').add({
-      data:{
-        title: '商品1',
-        price: 18,
-        tags:['book', 'food']
-      },
-      // showToast当点击事件发生的时候出现弹窗 
-      success:res=>{
-        console.log(res)
-        //小型弹窗
-        wx.showToast({
-          title: 'Add Success',
-        })
-      }
-    })
-  },
+  // addMall(){
+  //   //这里可以看成数据库的写入
+  //   //数据库的连接是根据collection（‘数据库名字’）.add()去增加到指定数据库名字的数据库里面
+  //   db.collection('emall').add({
+  //     data:{
+  //       title: '商品1',
+  //       price: 18,
+  //       tags:['book', 'food']
+  //     },
+  //     // showToast当点击事件发生的时候出现弹窗 
+  //     success:res=>{
+  //       console.log(res)
+  //       //小型弹窗
+  //       wx.showToast({
+  //         title: 'Add Success',
+  //       })
+  //     }
+  //   })
+  // },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
