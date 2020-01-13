@@ -6,32 +6,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id:'',
-    info:{}
+    id: '',
+    info: {}
   },
   order() {
     wx.cloud.callFunction({
       name: "emall-pay",
-      data:{
-        type:'unifiedorder',//统一下单
-        data:{
+      data: {
+        type: 'unifiedorder', //统一下单
+        data: {
           goodId: this.data.id
         }
       },
-      success: result=>{
+      success: result => {
         const data = result.data
         //再次签名
         wx.cloud.callFunction({
-          name:"emall-pay",
-          data:
-          {
-            type:"orderquery",
-            data:
-            {
+          name: "emall-pay",
+          data: {
+            type: "orderquery",
+            data: {
               out_trade_no: result.result.data.out_trade_no
             }
           },
-          success:queryRet=>{
+          success: queryRet => {
             const {
               time_stamp,
               nonce_str,
@@ -47,9 +45,8 @@ Page({
               package: 'prepay_id=${prepay_id}',
               signType: 'MD5',
               paySign: sign,
-              success()
-              {
-                wx.hideLoading()//收尾操作，隐藏loading
+              success() {
+                wx.hideLoading() //收尾操作，隐藏loading
               }
             })
           }
@@ -61,18 +58,18 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     this.setData({
       id: options.id
     })
     const ins = db.collection('emall').doc(options.id)
     ins.update({
-      data:{
+      data: {
         count: db.command.inc(1)
       }
     })
     ins.get({
-      success: res=>{
+      success: res => {
         this.setData({
           info: res.data
         })
@@ -84,49 +81,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })
