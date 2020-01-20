@@ -25,14 +25,18 @@ Page({
     //实例功能setTabbar
     app.setTabbar()
   },
+  //下拉刷新
   onPullDownRefresh() {
     this.getList(true)
   },
+  //触底加页
   onReachBottom() {
     this.page += 1
     this.getList()
   },
+  //获取列表
   getList(isInint) {
+    //设置页面为最大个数为5个
     const PAGE = 5
     wx.showLoading({
       title: 'Loading',

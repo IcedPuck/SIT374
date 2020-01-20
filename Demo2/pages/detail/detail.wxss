@@ -9,3 +9,18 @@
 .all{
   display: flex;
 }
+.botton{
+  bottom: 30rpx;
+  position: fixed;
+  width: 100%;
+}
+.buttom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1rpx;
+  margin: 10rpx;
+  padding: 20rpx;
+  width: 750rpx;
+}

@@ -18,6 +18,7 @@ Page({
       email: e.detail.value.email,
       phone: e.detail.value.phone
     })
+    //将数据上传到EPDetail里面
     db.collection('EPDetail').add({
       data:{
         email: e.detail.value.email,

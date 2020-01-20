@@ -7,4 +7,6 @@
     <view>$ {{info.price}}</view>
   </view>
 </view>
-<button type="primary" bindtap="order">立即下单</button>
+<view class="botton">
+<button type="primary" bindtap="order" class="buttom">立即下单</button>
+</view>
