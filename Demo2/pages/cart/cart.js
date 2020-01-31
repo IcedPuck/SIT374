@@ -44,12 +44,26 @@ Page({
     const{ index } = e.currentTarget.dataset
     const carts = [...this.data.carts]
     carts[index].num -= 1
-    this.setData({
-      carts
-    })
-    app.globalData.carts = carts
-    app.setTabbar()
-    this.getTotal()
+    if (carts[index].num - 0 > 0)
+    {
+      this.setData({
+        carts
+      })
+      app.globalData.carts = carts
+      app.setTabbar()
+      this.getTotal()
+    }
+    else
+    {
+      carts[index].num = 0
+      this.setData({
+        carts
+      })
+      app.globalData.carts = carts
+      app.setTabbar()
+      this.getTotal()
+    }
+
   },
   onShow(){
     this.setData({

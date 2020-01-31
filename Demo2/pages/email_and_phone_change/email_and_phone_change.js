@@ -14,6 +14,7 @@ Page({
   searchBox: function(e) {
     const that = this
     let phone, email
+    //向上面添加数据
     that.setData({
       email: e.detail.value.email,
       phone: e.detail.value.phone
@@ -27,9 +28,21 @@ Page({
       success: res => {
         console.log(res)
         wx.showToast({
-          title: 'Add Success',
+          title: 'Add Success'
         })
       }
     })
-  }
+  },
+  // onLoad(){
+  //   let phone, email
+  //   db.collection('EPDetail').get({
+  //     success:(res) => {
+  //       //console.log(res)
+  //       this.setData({
+  //         email: e.detail.value.email,
+  //         phone: e.detail.value.phone
+  //       })
+  //     }
+  //   })
+  // }
 })
