@@ -14,25 +14,25 @@ Page({
   searchBox: function(e) {
     const that = this
     let phone, email
-    //向上面添加数据
-    that.setData({
-      email: e.detail.value.email,
-      phone: e.detail.value.phone
-    })
     //将数据上传到EPDetail里面
-    db.collection('EPDetail').add({
+    db.collection('EPDetail').doc('42d70ff05e79bfcb000024df07e2b0fc').update({
       data:{
         email: e.detail.value.email,
         phone: e.detail.value.phone
       },
       success: res => {
         console.log(res)
+        //向上面添加数据
+        that.setData({
+          email: e.detail.value.email,
+          phone: e.detail.value.phone
+        })
         wx.showToast({
           title: 'Add Success'
         })
       }
     })
-  },
+  }
   // onLoad(){
   //   let phone, email
   //   db.collection('EPDetail').get({

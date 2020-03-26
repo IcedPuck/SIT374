@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/main/main",
+    "pages/cart/cart",
+    "pages/email_and_phone_change/email_and_phone_change",
     "pages/index/index",
     "pages/me/me",
-    "pages/cart/cart",
     "pages/logs/logs",
     "pages/order/order",
     "pages/detail/detail",
-    "pages/email_and_phone_change/email_and_phone_change"
+    "pages/callFunction(test)/callFunction(test)"
   ],
   "window": {
     "backgroundTextStyle": "light",
