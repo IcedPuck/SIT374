@@ -1,0 +1,47 @@
+/* pages/orderList/orderList.wxss */
+.scroll-list{
+    height: 100%;
+}
+.date{
+    font-size:14px;
+    color: #eee;
+}
+.list-box{
+    width: 100%;
+    padding: 0;
+}
+.list-item{
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+.list-item .content{
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.list-item .content .coverImage{
+    display: block;
+    width: 150rpx;
+    height: 150rpx;
+    background: #eeeeee;
+    float: left;
+}
+.list-item .content .inner{
+    float: left;
+    padding-left:25rpx;
+}
+.list-item .del{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right:20rpx;
+    bottom:20rpx;
+}
+.back{
+  width: 10rpx;
+  height: 10rpx;
+}

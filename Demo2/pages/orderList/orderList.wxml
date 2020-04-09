@@ -1,0 +1,18 @@
+<!--pages/orderList/orderList.wxml-->
+<text>pages/orderList/orderList.wxml</text>
+<button class="back">back</button>
+<scroll-view scroll-y="{{true}}" class="scroll-list">
+    <text class="date">{{time}}</text>
+        <view class="list-box b-line"  wx:for="{{footprint}}" data-index="{{index}}" wx:item="item" wx:key>
+            <view class="list-item" data-index="{{index}}" >
+                <view class="content">
+                    <image src="" class="coverImage"/>
+                    <div class="inner">
+                        <text class="title">{{item.title}}</text>
+                        <text class="subtitle">{{item.subtitle}}</text>
+                    </div>
+                </view>
+                <image src="./../../images/my/delete.png" class="del" bindtap="del"  data-index="{{index}}"/>
+            </view>
+        </view>
+</scroll-view>
