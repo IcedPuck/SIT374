@@ -33,16 +33,5 @@ Page({
       }
     })
   }
-  // onLoad(){
-  //   let phone, email
-  //   db.collection('EPDetail').get({
-  //     success:(res) => {
-  //       //console.log(res)
-  //       this.setData({
-  //         email: e.detail.value.email,
-  //         phone: e.detail.value.phone
-  //       })
-  //     }
-  //   })
-  // }
+  
 })

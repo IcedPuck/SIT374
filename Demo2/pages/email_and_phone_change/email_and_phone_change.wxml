@@ -11,6 +11,7 @@
       <text>{{phone}}</text>
       <input class="input" name="phone"></input>
       <button type="primary" form-type="submit" class="button">Submit</button>
+            <text>{{item.id}}</text>
     </view>
   </form>
 </view>

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/search/search",
     "pages/main/main",
     "pages/orderList/orderList",
     "pages/cart/cart",
@@ -10,7 +11,7 @@
     "pages/order/order",
     "pages/detail/detail",
     "pages/callFunction(test)/callFunction(test)"
-   
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,6 +33,12 @@
         "text": "Cart",
         "iconPath": "static/img/cart.png",
         "selectedPath": "static/img/cart.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "Search",
+        "iconPath": "static/img/search.jpg",
+        "selectedPath": "static/img/search.jpg"
       },
       {
         "pagePath": "pages/me/me",

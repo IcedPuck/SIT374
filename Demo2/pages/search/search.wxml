@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+<text>pages/search/search.wxml</text>
+
+<form bindsubmit="getInputView">
+
+<input type="text" name="serach" placeholder="输入内容"></input>
+<button form-type="submit" type="primary">Search</button>
+
+</form>
