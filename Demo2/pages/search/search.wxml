@@ -1,9 +1,22 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
-
 <form bindsubmit="getInputView">
-
-<input type="text" name="serach" placeholder="输入内容"></input>
-<button form-type="submit" type="primary">Search</button>
-
+  <input type="text" name="serach" placeholder="输入内容"></input>
+  <button form-type="submit" type="primary">Search</button>
 </form>
+<view wx:for="{{list}}" wx:key="{{item._id}}" id="{{item._id}}" class="item-container" bindtap="toDetail">
+  <image lazy-load="true" mode="aspectFit" src="{{item.image}}"></image>
+  <view class="content">
+    <view class="title">{{item.title}} : {{item.count}}</view>
+
+    <view>
+      <text class="tag" wx:for="{{item.tags}}" wx:key="{{item._id}}">{{item}}</text>
+    </view>
+  </view>
+  <view class="action">
+    <view>
+      ￥{{item.price}}
+    </view>
+    <view class="cart" data-item="{{item}}" catchtap="addCart">
+      +
+    </view>
+  </view>
+</view>
