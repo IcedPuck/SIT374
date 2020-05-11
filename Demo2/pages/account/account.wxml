@@ -1,0 +1,49 @@
+<!--pages/me/account/account.wxml-->
+
+<view class="table">
+
+<view class="tr bg-w">
+</view>
+
+  <view class="tr bg-w">
+    <view class="th">Photo</view>
+    <view class="th"><image mode='aspectFill' src='/img/Profile.png' style="width:40px;height:40px;"></image></view>
+  </view>
+
+<view class="tr bg-w">
+</view>
+
+  <view class="tr bg-w">
+    <view class="th">Name</view>
+    <view class="th">John Doe</view>
+  </view>
+
+<view class="tr bg-w">
+</view>
+
+  <view class="tr bg-w">
+    <view class="th">ID</view>
+    <view class="th">219083709</view>
+  </view>
+
+<view class="tr bg-w">
+</view>
+
+  <view class="tr bg-w">
+    <view class="th">Date of birth</view>
+    <view class="th">23/04/1999</view>
+  </view>
+
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+  </block>
+</view>

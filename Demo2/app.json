@@ -10,7 +10,11 @@
     "pages/logs/logs",
     "pages/order/order",
     "pages/detail/detail",
-    "pages/callFunction(test)/callFunction(test)"
+    "pages/callFunction(test)/callFunction(test)",
+    "pages/purchaseHistory/purchaseHistory",
+    "pages/account/account",
+    "pages/product/product",
+    "pages/administrator/administrator"
   ],
   "window": {
     "backgroundTextStyle": "light",

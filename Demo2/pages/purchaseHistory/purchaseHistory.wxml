@@ -1,0 +1,68 @@
+<!--pages/purchaseHistory/purchaseHistory.wxml-->
+<view class="link-box">
+  <view bindtap="toProduct" id='6'>
+    <image mode='aspectFill' src='../../img/product.png'></image>
+    <block style="margin: 50rpx">
+      <textarea style="margin-left: 160rpx; width: 73%; font-weight:bold; height: auto;">Beginning C++ Programming - From Beginner to Beyond</textarea>
+      <textarea style="margin-left: 160rpx; width: 73%; font-size: 30rpx; height: auto; color: #95979b;">Tim Buchalka's Learn Programming Academy</textarea>
+      <view style="display: flex;margin-left: 160rpx; height: auto;">
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starHalf.png"></image>
+        <text style="color: #95979b; font-size: 30rpx; margin-top:10rpx; ">4.6 (21,181)</text>
+      </view>
+      <view style="display: flex;margin-left: 160rpx; height: auto;">
+        <text style="font-weight:bold;">$99.00</text>
+      </view>
+      <view>
+        <text style="background-color:yellow;; margin-left: 160rpx; font-size: 25rpx; width:200rpx; height: 40rpx">Hot Course</text>
+      </view>
+    </block>
+  </view>
+
+  <view bindtap="toProduct" id='6'>
+    <image mode='aspectFill' src='../../img/product1.png'></image>
+    <block style="margin: 50rpx">
+      <textarea style="margin-left: 160rpx; width: 73%; font-weight:bold; height: auto;">The Data Science Course 2020: Complete Data Science Bootcamp</textarea>
+      <textarea style="margin-left: 160rpx; width: 73%; font-size: 30rpx; height: auto; color: #95979b;">365 Careers, 365 Careers Team</textarea>
+      <view style="display: flex;margin-left: 160rpx; height: auto;">
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starHalf.png"></image>
+        <text style="color: #95979b; font-size: 30rpx; margin-top:10rpx; ">4.5 (56,685)</text>
+      </view>
+      <view style="display: flex;margin-left: 160rpx; height: auto;">
+        <text style="font-weight:bold;">$73.00</text>
+      </view>
+      <view>
+        <text style="background-color:yellow;; margin-left: 160rpx; font-size: 25rpx; width:200rpx; height: 40rpx">Hot Course</text>
+      </view>
+    </block>
+  </view>
+
+  <view bindtap="toProduct" id='6'>
+    <image mode='aspectFill' src='../../img/product2.png'></image>
+    <block style="margin: 50rpx">
+      <textarea style="margin-left: 160rpx; width: 73%; font-weight:bold; height: auto;">Java Programming for Complete Beginners</textarea>
+      <textarea style="margin-left: 160rpx; width: 73%; font-size: 30rpx; height: auto; color: #95979b;">in28Minutes Official</textarea>
+      <view style="display: flex;margin-left: 160rpx; height: auto;">
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starHalf.png"></image>
+        <text style="color: #95979b; font-size: 30rpx; margin-top:10rpx; ">4.4 (6,860)</text>
+      </view>
+      <view style="display: flex;margin-left: 160rpx; height: auto;">
+        <text style="font-weight:bold;">$78.00</text>
+      </view>
+      <view>
+        <text style="background-color:yellow;; margin-left: 160rpx; font-size: 25rpx; width:200rpx; height: 40rpx">Hot Course</text>
+      </view>
+    </block>
+  </view>
+</view>

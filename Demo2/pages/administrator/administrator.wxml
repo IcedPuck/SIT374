@@ -1,0 +1,12 @@
+<!--pages/me/administrator/administrator.wxml-->
+<view class='content'>
+    <input type="text" placeholder="name" disabled='{{isDisabled}}' bindblur='nameInput'></input>
+    <input type="text" placeholder="detail" disabled='{{isDisabled}}' bindblur='detailInput'></input>
+    <input type="text" placeholder="contacts" disabled='{{isDisabled}}' bindblur='contactsInput'></input>
+
+    <button class='but1' form-type='file' bindtap='picture' >Choose a picture</button>
+    <view class='image_v'>
+        <image mode='aspectFit' src='{{picture}}'></image>
+    </view>
+    <button class='but1' form-type='submit' bindtap='publish' >Publish</button>
+</view>

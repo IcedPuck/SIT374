@@ -1,21 +1,57 @@
 <!--pages/me/me.wxml-->
-<view class="userinfo">
-  <button wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
-  <block>
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
-    <!-- 用户头像及风格设定 -->
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    <!-- 用户名称 -->
-    <!-- #注意{{userInfo.nickName}}为可以替换的名称 -->
-  </block>
-  <!-- bindtap是点击事件 -->
-</view>
-<!-- 需要添加点击事件 -->
-<view class="add_btn">
-  <!-- 跳转到已经购买的详细页面上 -->
-  <button class="viewItem" bindtap="toOrder">Order</button>
-  <!-- 跳转到用户联系方式页面 -->
-  <button class="viewItem" bindtap="toEP">Email and Phone</button>
-  <!-- 跳转到客服 -->
-  <button class="viewItem" open-type="contact">Service</button>
+<view class='content'>
+
+  <view class="grxx">
+    <button class="button" wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+    <image class="userinfo-avatar" bindtap="toService" src="{{userInfo.avatarUrl}}"></image>
+    <view class="fl">
+      <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+      <text class='text'>San Francisco, CA</text>
+    </view>
+
+  </view>
+
+
+  <view class="link-box">
+
+    <view bindtap="moreClick" id='0'>
+      <image mode='aspectFill' src='../../img/event.png'></image>
+      <text>Events</text>
+    </view>
+
+    <view bindtap="toAccount" id='1'>
+      <image mode='aspectFill' src='../../img/account.png'></image>
+      <text>Account</text>
+    </view>
+
+    <view bindtap="toOrder" id='2'>
+      <image mode='aspectFill' src='../../img/order.jpg'></image>
+      <text>To Order</text>
+    </view>
+    <view bindtap="toHistory" id='6'>
+      <image mode='aspectFill' src='../../img/history.png'></image>
+      <text>Purchase History</text>
+    </view>
+
+    <view bindtap="moreClick" id='3'>
+      <image mode='aspectFill' src='../../img/Help.png'></image>
+      <text>Help</text>
+    </view>
+
+    <view bindtap="toEP" id='4'>
+      <image mode='aspectFill' src='../../img/email.jpg'></image>
+      <text>Email and Phone</text>
+    </view>
+
+    <!-- <view id='5'>
+      <image mode='aspectFill' src='../../img/chart.png'></image>
+      <button open-type="contact">Service</button>
+    </view> -->
+    <view bindtap="toService" id='5'>
+      <image mode='aspectFill' src='../../img/chart.png'></image>
+      <text>Service</text>
+    </view>
+
+  </view>
+
 </view>
