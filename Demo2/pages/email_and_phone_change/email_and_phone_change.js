@@ -15,7 +15,7 @@ Page({
     const that = this
     let phone, email
     //将数据上传到EPDetail里面
-    db.collection('EPDetail').doc('42d70ff05e79bfcb000024df07e2b0fc').update({
+    db.collection('EPDetail').doc('5e847ab25eb4e5d1005cc40f7024a2da').update({
       data:{
         email: e.detail.value.email,
         phone: e.detail.value.phone

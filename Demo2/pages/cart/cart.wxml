@@ -17,11 +17,6 @@
       </view>
     </view>
   </view>
-  <view wx:if="{{address.userName}}">
-    <view>{{address.userName}}</view>
-    <view>{{address.telNumber}}</view>
-    <view>{{address.countyName}}{{address.countyName}}{{address.detailInfo}}{{address.nationalCode}}{{address.provinceName}}</view>
-  </view>
   <view class="button">
     <button type="primary" bindtap="order">￥{{total}} Order</button>
   </view>

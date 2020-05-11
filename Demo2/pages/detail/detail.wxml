@@ -3,8 +3,10 @@
 <view>
   <image src="{{info.image}}" class="image"></image>
   <view>
+    <view>{{info.tags}}</view>
     <view>{{info.title}}</view>
     <view>$ {{info.price}}</view>
+    <view>{{info.detail}}</view>
   </view>
 </view>
 <view class="botton">
