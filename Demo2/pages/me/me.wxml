@@ -8,7 +8,6 @@
       <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
       <text class='text'>San Francisco, CA</text>
     </view>
-
   </view>
 
 
