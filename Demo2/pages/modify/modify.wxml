@@ -1,0 +1,12 @@
+<!--pages/me/modify/modify.wxml-->
+<view class='content'>
+    <input type="text" value="{{name}}" placeholder="Name" disabled='{{isDisabled}}' bindblur='nameInput'></input>
+    <input type="text" value="{{detail}}" placeholder="Detail" disabled='{{isDisabled}}' bindblur='detailInput'></input>
+    <input type="text" value="{{phone}}" placeholder="Contacts" disabled='{{isDisabled}}' bindblur='contactsInput'></input>
+
+    <button class='but1' form-type='file' bindtap='picture' >Choose a picture</button>
+    <view class='image_v'>
+        <image mode='aspectFit' src='{{pic}}'></image>
+    </view>
+    <button class='but1' form-type='submit' bindtap='modify' >Modify</button>
+</view>

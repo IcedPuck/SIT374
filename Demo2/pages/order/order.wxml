@@ -1,26 +1,40 @@
 <!--pages/order/order.wxml-->
-<view>
-  <image></image>
+
+<view wx:for="{{list}}" class="table">
+
+  <view class="tr">
+    <view class="th">Client: </view>
+    <view class="th">{{item.client}}</view>
+  </view>
+
+  <view class="tr">
+    <view class="th">Course: </view>
+    <view class="th">{{item.couse}}</view>
+  </view>
+
+  <view class="tr">
+    <view class="th">Time: </view>
+    <view class="th">{{item.time}}</view>
+  </view>
+
+  <view class="tr">
+    <view class="th">Address: </view>
+    <view class="th">{{item.address}}</view>
+  </view>
+
+  <view class="tr">
+    <view class="th">Detail: </view>
+    <view class="th">{{item.detail}}</view>
+  </view>
+
+  <view class="tr">
+    <view class="th">Transaction Value: </view>
+    <view class="th">$ {{item.transationValue}}</view>
+  </view>
+
+  <view class="pic-view">
+    <image class="pic" src="{{item.image}}"></image>
+  </view>
 </view>
-<view class="add_btn">
-  <view class="list">
-    <text>Client: {{userInfo.nickName}}</text>
-  </view>
-  <view class="list">
-    <text>Couse: </text>
-  </view>
-  <view class="list">
-    <text>Time: </text>
-  </view>
-  <view class="list">
-    <text>Address: </text>
-  </view>
-  <view class="list">
-    <view>
-      <text>Detail: </text>
-    </view>
-    <view class="detailView">
-      <text class="detail">12312314</text>
-    </view>
-  </view>
-</view>
+
+  

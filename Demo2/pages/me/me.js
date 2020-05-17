@@ -15,7 +15,7 @@ Page({
   // 需要传参
   toOrder(e) {
     wx.navigateTo({
-      url: '/pages/order/order',
+      url: '/pages/orderList/orderList',
     })
   },
   //跳转到email_and_phone_change页面
@@ -23,11 +23,6 @@ Page({
   toEP(e) {
     wx.navigateTo({
       url: '/pages/email_and_phone_change/email_and_phone_change',
-    })
-  },
-  toHistory(e){
-    wx.navigateTo({
-      url: '/pages/purchaseHistory/purchaseHistory',
     })
   },
   toAccount(e){
@@ -57,5 +52,30 @@ Page({
         wx.setStorageSync('userInfo', e.detail.userInfo)
       }
     })
-  }
+  },
+  data: {
+    lastTapTime: 0,
+  },
+
+  doubleClick: function (e) {
+    var curTime = e.timeStamp
+    var lastTime = e.currentTarget.dataset.time  // 通过e.currentTarget.dataset.time 访问到绑定到该组件的自定义数据
+    if (curTime - lastTime > 0) {
+      if (curTime - lastTime < 300) {//是双击事件
+        wx.navigateTo({
+          url: '/pages/adminlogin/adminlogin',
+        })
+      }
+
+    }
+    this.setData({
+      lastTapTime: curTime
+    })
+  },
+  Service(e) {
+    wx.navigateTo({
+      url: '/pages/administrator/administrator',
+    })
+  },
+
 })

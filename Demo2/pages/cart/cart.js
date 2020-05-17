@@ -23,9 +23,7 @@ Page({
     })
   },
   addCart(e) {
-    const {
-      index
-    } = e.currentTarget.dataset
+    const {index} = e.currentTarget.dataset
     const carts = [...this.data.carts]
     carts[index].num += 1
     this.setData({
@@ -50,8 +48,8 @@ Page({
               provinceName: res.provinceName,
               telNumber: res.telNumber,
               userName: res.userName,
-              email:'',
-              phone:''
+              email:'yinxiaof@deakin.edu.au',
+              phone:'133XXXXXX'
             }
           })
           this.setData({

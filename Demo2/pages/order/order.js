@@ -1,3 +1,8 @@
+//pages/orderList/orderLost
+const app = getApp();
+//Cloud database instance
+const db = wx.cloud.database();
+
 // pages/order/order.js
 Page({
 
@@ -5,14 +10,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (options, e) {
+    var itemName = options.couse;
+    db.collection('orderInfo').where({
+      couse: itemName
+    }).get({
+      success: res => {
+        for (var i = 0; i < res.data.length; i++) {
+          var year = res.data[i].time.getFullYear();
+          var month = res.data[i].time.getMonth() + 1 < 10 ? "0" + (res.data[i].time.getMonth() + 1) : res.data[i].time.getMonth() + 1;
+          var day = res.data[i].time.getDate() < 10 ? "0" + res.data[i].time.getDate() : res.data[i].time.getDate();
+          res.data[i].time = year + "-" + month + "-" + day;
+        }
+        this.setData({
+          list: res.data
+        })
+      }
+    })
   },
 
   /**

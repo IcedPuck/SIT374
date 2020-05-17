@@ -1,0 +1,38 @@
+<!--pages/me/adminlogin/adminlogin.wxml-->
+<view class="container"> 
+  <view class="login-from">  
+
+    <view class="weui-cell">
+      <!-- 用户名 -->
+      <view class="weui-cell weui-cell_input">
+      <image class="nameImage" src="../../img/name.png"></image>
+          <view class="weui-cell__hd">
+              <view class="weui-label">USERNAME</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="user-input" type="text" placeholder="Enter your username" bindblur='nameInput'></input>
+              <!--name="no" value='{{no}}'-->
+          </view>
+      </view>
+    </view>
+
+    <view class="weui-cell">
+      <!-- 密码-->
+      <view class="weui-cell weui-cell_input">
+      <image class="keyImage" src="../../img/key.png"></image>
+      <view class="weui-cell__hd">
+              <view class="weui-label">PASSWORD</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="user-input" type="password" placeholder="Enter your password" bindblur='pwdInput'></input>
+          </view>
+      </view>
+    </view>
+
+    <!--按钮1-->  
+    <view class="loginBtnView">  
+      <button class="loginBtn" value="" size="{{primarySize}}" bindtap="loginBtn" form-type='submit' disabled='{{disabled}}'>Login</button> 
+    </view>   
+   
+  </view>  
+</view>

@@ -1,0 +1,64 @@
+<!--pages/me/newadmin/newadmin.wxml-->
+<view hover-class="none" hover-stop-propagation="false">
+  <!-- 添加商品按钮-->
+  <view class="firstline">
+    
+    <button bindtap="jump_manager" class="sub" form-type="submit" type="primary">Add new goods</button>
+    
+  </view>
+
+
+  <!--第一个块，每个块里面有10个小块 ,每个块就是一个商品----- -->
+  <view wx:for="{{list}}" class="block">
+   
+    <image src="{{item.image}}" class="item"></image>
+
+    <view class="txt-box">
+
+      <view class="txt-box.oneline"> 
+        <text>{{item.title}}</text>
+      </view>
+
+      <view class="txt-box.oneline"> 
+        <view class=".txt-box.oneline.describe">
+          <text> {{item.detail}} </text>
+        </view>
+      </view>
+
+      <view class="txt-box.twoline">
+
+        <view class=".txt-box.twoline.left">
+
+          <view class="txt-box.twoline.left.price">
+            <text>$ {{item.price}}</text>
+          </view>
+
+          <view wx:if="{{item.time == nowYear}}" class="txt-box.twoline.left.title">
+            <text>New release</text>
+          </view>
+    
+      </view>
+
+      <view class="txt-box.twoline.right">
+        <button class="txt-box.twoline.right.modify" bindtap="clickModify" data-id="{{item._id}}" data-name="{{item.title}}" data-detail="{{item.detail}}" data-image="{{item.image}}">
+          <text>Modify</text>
+        </button>         
+        <button class="txt-box.twoline.right.delete" bindtap="clickDelete"  data-id="{{item._id}}">
+          <text>Delete</text>
+        </button>
+      </view> 
+
+    </view>
+  </view>
+</view>
+
+  <view hidden="{{hiddenBottom}}" class="bottomText">
+    <text>Has reached bottom !</text>
+  </view>
+
+  <view>
+    <modal title = "Delete？" cancel-text = "Cancel" confirm-text = "Delete"
+    hidden="{{mHidden}}" bindconfirm = "deleteItem" bindcancel =      "cancelDelete">
+    </modal>
+  </view>
+</view>

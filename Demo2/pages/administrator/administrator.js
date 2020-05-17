@@ -39,7 +39,7 @@ Page({
   },
   publish: function () {
     const db = wx.cloud.database()
-    db.collection('Administrator').add({
+    db.collection('emall').add({
       data: {
         name: this.data.name,
         detail: this.data.detail,
@@ -54,4 +54,5 @@ Page({
       }
     })
   },
+
 })

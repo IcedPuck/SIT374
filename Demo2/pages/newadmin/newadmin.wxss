@@ -1,0 +1,166 @@
+/* pages/me/newadmin/newadmin.wxss */
+.item-container{
+  display: flex;
+}
+.image{
+  height: 100rpx;
+  width: 100rpx;
+  flex: 1;
+  border-radius: 30%;
+}
+
+.button{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 46rpx;
+}
+
+.item{
+  width: 200rpx;
+  height: 220rpx;
+  float: left;
+  flex: 1;
+}
+
+.block{ 
+width: 100%;
+height: 220rpx;
+float: left;
+background-color:#eeee;
+margin-bottom: 10rpx;
+
+}
+
+.emptyoneline{
+  width: 100%;
+  height: 15rpx;
+  background-color:white;
+  float: left;
+  display: block;
+}
+
+.txt-box{
+
+  width: 73%;
+  float: left;
+  height: 200rpx;
+  background-color:#eeee;
+  display: block;
+  
+  
+}
+.txt-box.oneline{ 
+  background-color: #eeee;
+  width: 100%;
+  height: 50rpx;
+  display: block;
+  margin-left: 5rpx;
+}
+
+.txt-box.oneline.describe{
+  
+  font-size: 8px;
+  color:#36648B;
+  display: block;
+}
+
+
+.txt-box.twoline{
+  background-color: #eeee;
+  width: 100%;
+  height: 100rpx;
+  display: block;
+  float: left;
+  margin-left: 5rpx;
+}
+.txt-box.twoline.left{
+  
+  width: 40%;
+  height: 100rpx;
+  display: block;
+  float: left;
+  margin-left: 5rpx;
+}
+.txt-box.twoline.left.price{
+  width: 100%;
+  font-size: 45rpx;
+  color: coral;
+  height: 50rpx;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 10rpx;
+  
+}
+.txt-box.twoline.left.title{
+  width: 100%;
+  color:#2CDBE8;
+  font-size: 30rpx;
+  height: 50rpx;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 5rpx;
+}
+
+.txt-box.twoline.right{
+  background-color:#eeee;
+  width: 50%;
+  height: 100rpx;
+  display: block;
+  float: right;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+.txt-box.twoline.right.modify{
+  width: 10%;
+  height: 40rpx;
+  color:white;
+  font-size: 25rpx;
+  text-align: center;
+  background-image: linear-gradient(313deg, #5abd8c 0%, #00ff81 100%); 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+
+.txt-box.twoline.right.delete{
+  width: 10%;
+  height: 40rpx;
+  color:white;
+  font-size: 25rpx;
+  text-align: center;
+  background-image: linear-gradient(313deg, #5abd8c 0%, #00ff81 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-right: 10rpx;
+}
+
+.firstline {
+  background-color:white;
+  width: 100%;
+  height: 100rpx;
+  float: left;
+  margin-bottom: 10rpx;
+}
+.firstline .sub{
+  float:right; 
+  background-image: linear-gradient(313deg, #5abd8c 0%, #00ff81 100%);
+  margin-right: 10rpx;
+}
+
+/**
+* write by Hao Xie
+*/
+.bottomText{
+  width:100%;
+  color:#A9A9A9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+

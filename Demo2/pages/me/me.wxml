@@ -2,55 +2,40 @@
 <view class='content'>
 
   <view class="grxx">
-    <button class="button" wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
-    <image class="userinfo-avatar" bindtap="toService" src="{{userInfo.avatarUrl}}"></image>
-    <view class="fl">
-      <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
-      <text class='text'>San Francisco, CA</text>
-    </view>
+	<button class="Amin" data-time="{{lastTapTime}}" bindtap="doubleClick"></button>
+		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+			<view class="fl" >
+				<text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+        <!-- <text class='text'>San Francisco, CA</text> -->
+				<button class="button" wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+			</view>
   </view>
-
 
   <view class="link-box">
-
-    <view bindtap="moreClick" id='0'>
-      <image mode='aspectFill' src='../../img/event.png'></image>
-      <text>Events</text>
-    </view>
-
-    <view bindtap="toAccount" id='1'>
-      <image mode='aspectFill' src='../../img/account.png'></image>
-      <text>Account</text>
-    </view>
-
+		<view bindtap="moreClick" id='0'> 
+            <image mode='aspectFill' src='../../img/event.png'></image>
+			    <text>Events</text>
+		</view>		
+		<view bindtap="toAccount" id='1'>
+            <image mode='aspectFill' src='../../img/account.png'></image>
+                <text>Account</text>
+		</view>
     <view bindtap="toOrder" id='2'>
-      <image mode='aspectFill' src='../../img/order.jpg'></image>
-      <text>To Order</text>
-    </view>
-    <view bindtap="toHistory" id='6'>
-      <image mode='aspectFill' src='../../img/history.png'></image>
-      <text>Purchase History</text>
-    </view>
-
-    <view bindtap="moreClick" id='3'>
-      <image mode='aspectFill' src='../../img/Help.png'></image>
-      <text>Help</text>
-    </view>
-
-    <view bindtap="toEP" id='4'>
-      <image mode='aspectFill' src='../../img/email.jpg'></image>
-      <text>Email and Phone</text>
-    </view>
-
-    <!-- <view id='5'>
-      <image mode='aspectFill' src='../../img/chart.png'></image>
-      <button open-type="contact">Service</button>
-    </view> -->
-    <view bindtap="toService" id='5'>
-      <image mode='aspectFill' src='../../img/chart.png'></image>
-      <text>Service</text>
-    </view>
-
-  </view>
+            <image mode='aspectFill' src='../../img/order.jpg'></image>
+                <text>toOrder</text>
+		</view>		
+		<view bindtap="moreClick" id='3'>
+            <image mode='aspectFill' src='../../img/Help.png'></image>
+                <text>Help</text>
+		</view>		
+		<view bindtap="toEP" id='4'>
+            <image mode='aspectFill' src='../../img/email.jpg'></image>
+                <text>Email and Phone</text>
+		</view>	
+		<view bindtap="Service" id='5'>
+            <image mode='aspectFill' src='../../img/chart.png'></image>
+                <text>Service</text>
+		</view>		
+	</view>
 
 </view>

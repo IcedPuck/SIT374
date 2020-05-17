@@ -1,6 +1,68 @@
+/**index.wxss**/
+
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 60rpx;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.Logo {
+  width: 700rpx;
+  height: 200rpx;
+  margin-bottom: 400rpx;
+}
+
 .button {
   margin: 2 3rpx;
   padding: 2 3rpx;
+  margin-top: 40rpx
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.add_btn {
+  bottom: 30rpx;
+  position: fixed;
+  width: 100%;
+}
+
+.viewItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1rpx;
+  margin: 10rpx;
+  padding: 30rpx;
+  width: 750rpx;
+}*/
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 30rpx;
+  border-radius: 50%;
 }
 
 .grxx{
@@ -13,14 +75,20 @@
 
 .grxx .button{
   display: block;
-  width: 30%;
+  width: 100%;
   background-image: linear-gradient(313deg, #5abd8c 0%, #00ff81 100%);
-  box-shadow: 0px 5px 15px 0px rgba(90, 189, 140, 0.5);
-  border-radius: 10px;
-  line-height: 2.5em;
-  font-size: 12px;
+  /*box-shadow: 0px 5px 15px 0px rgba(90, 189, 140, 0.5);*/
+  /*border-radius: 10px;*/
+  line-height: 1.5em;
+  font-size: 15px;
   color: white;
   text-align: center;
+}
+
+.grxx .Amin{
+  width: 3%;
+  background-color: #f1f9ff ;
+  float: right;
 }
 
 .grxx image{
@@ -30,15 +98,15 @@
   border-radius: 50%;
   margin-right: 10rpx;
   float: left;
-  margin-top: 250rpx;
+  margin-top: 220rpx;
   margin-left: 50rpx;
 }
 .grxx .fl{
   width: 400rpx;
-  height: 112rpx;
+  height: 125rpx;
   overflow: hidden;
   float: left;
-  margin-top: 250rpx;
+  margin-top: 135rpx;
   margin-left: 15rpx;
 }
 .grxx .fl text{

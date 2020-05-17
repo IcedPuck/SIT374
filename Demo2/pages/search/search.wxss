@@ -1,1 +1,54 @@
 /* pages/search/search.wxss */
+page{
+  background-color: rgb(243, 234, 234);
+}
+input{
+  background-color: white;
+  border-radius: 40rpx;
+  margin-top: 32rpx;
+  width: 90%;
+  float: left;
+  height: 112rpx;
+  font-size: 30rpx;
+  padding:0 5%;
+  margin-bottom: 30rpx;
+}
+.item-container{
+  display: flex;
+  margin-top: 5rpx;
+  background-color: white;
+  padding: 5rpx;
+  border-radius: 5%;
+  border: 2rpx solid #999999;
+
+}
+.item-container image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.tag{
+  padding: 0 5rpx;
+  background:#5ABD8C;
+  border-radius: 20%;
+  margin: 5rpx;
+  color: white;
+  font-size: 28rpx;
+}
+.add{
+  padding: 0 5rpx;
+  background: red;
+  border-radius: 20%;
+  margin: 5rpx;
+  color: white;
+  font-size: 28rpx;
+}
+.backgroudColor{
+  background-color: grey;
+}
+.price{
+  margin-left:300rpx ;
+}
+.cart{
+  margin-left:300rpx ;
+  padding: auto;
+}

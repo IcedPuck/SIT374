@@ -4,8 +4,10 @@
 }
 .image{
   height: 100rpx;
+  width: 100rpx;
   flex: 1;
 }
+
 .content{
   flex:2;
 }
@@ -31,7 +33,7 @@
 .cart{
   padding: 5rpx;
   background: red;
-  border-radius: 40%;
+  border-radius: 40%;  
   color: white;
   width: 30rpx;
   height: 30rpx;
@@ -46,3 +48,82 @@
   width: 100%;
   margin-bottom: 46rpx;
 }
+.cartback{
+  
+   background-color: aquamarine;
+   height: 50%;
+   width : 50%;
+}
+
+discrip{
+
+  float: left;
+  color: aqua;
+  font-size: 12rpx;
+}
+info{
+  color: rgba(36, 33, 38, 0.5);
+  font-weight: normal;
+  font-size: 24rpx;
+  
+}
+more{
+  display: block;
+  width: 50%;
+  background-image: linear-gradient(313deg, #5abd8c 0%, #00ff81 100%);
+  box-shadow: 0px 5px 15px 0px rgba(90, 189, 140, 0.5);
+  border-radius: 10px;
+  line-height: 2.5em;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+
+
+.item{
+  
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+  flex: 1;
+}
+
+.txt-box{
+
+  width: 70%;
+  float: left;
+  height: 200rpx;
+  background-color:white;
+  display: block;
+}
+.txt-box.oneline{
+  
+  background-color: #eeee;
+  width: 100%;
+  height: 50rpx;
+  display: block;
+  
+}
+
+.txt-box.oneline.describe{
+  
+  font-size: 8px;
+  color:#36648B;
+  display: block;
+}
+
+.txt-box.oneline.price{
+  
+  font-size: 40rpx;
+  color: coral;
+  display: block;
+}
+
+
+.txt-box.oneline.title{
+  color:#2CDBE8;
+  font-size: 30rpx;
+  display: block;
+}
+
