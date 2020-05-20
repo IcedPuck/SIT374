@@ -1,1 +1,2 @@
-<button bindtap = "callFunction">Add Function</button>
+<button bindtap = "input">Add Function</button>
+<button bindtap = "loadp">Load</button>

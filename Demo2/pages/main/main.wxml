@@ -25,7 +25,7 @@
         ￥{{item.price}}
       </view>
       <view class="cart" data-item="{{item}}" catchtap="addCart">
-        +
+        <text> +</text>
       </view>
     </view>
   </view>

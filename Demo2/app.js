@@ -56,6 +56,8 @@ App({
   },
   globalData: {
     userInfo: null,
+    openid:null,
+    username:"Hello",
     //获取数据
     carts:wx.getStorageSync('carts') || []
   }

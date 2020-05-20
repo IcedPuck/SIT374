@@ -8,6 +8,8 @@
   justify-content: center;/** 水平居中  */
   grid-gap: 10rpx;/** 水平和垂直间距为10rpx*/
   padding: 10rpx;
+  border: 2rpx solid #999999;
+  border-radius: 5%;
 }
 .image{
   width: 200rpx;
@@ -28,8 +30,8 @@
 }
 .tag{
   padding: 0 5rpx;
-  background: red;
-  border-radius: 20%;
+  background: #5abd8c;
+  border-radius: 10%;
   margin: 5rpx;
   color: white;
   font-size: 28rpx;
@@ -37,10 +39,10 @@
 .cart{
   padding: 5rpx;
   background: red;
-  border-radius: 40%;
+  border-radius: 10%;
   color: white;
   width: 30rpx;
-  height: 30rpx;
+  height: 50rpx;
 }
 .slide-image{
   width: 100%;
@@ -51,4 +53,8 @@
   color: #5abd8c;
   text-align: left;
   margin-top: 90rpx;
+}
+.star{
+  width: 30rpx;
+  height: 30rpx;
 }
