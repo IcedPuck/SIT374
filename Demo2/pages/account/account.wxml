@@ -7,7 +7,8 @@
 
   <view class="tr bg-w">
     <view class="th">Photo</view>
-    <view class="th"><image mode='aspectFill' src='/img/Profile.png' style="width:40px;height:40px;"></image></view>
+    <view class="th">
+    <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data></view>
   </view>
 
 <view class="tr bg-w">
@@ -15,15 +16,15 @@
 
   <view class="tr bg-w">
     <view class="th">Name</view>
-    <view class="th">John Doe</view>
+    <view class="th"><open-data type="userNickName"></open-data></view>
   </view>
 
 <view class="tr bg-w">
 </view>
 
   <view class="tr bg-w">
-    <view class="th">ID</view>
-    <view class="th">219083709</view>
+    <view class="th">Phone Number</view>
+    <view class="th" wx:for="{{accountdetail}}">{{item.phone}}</view>
   </view>
 
 <view class="tr bg-w">

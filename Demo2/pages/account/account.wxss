@@ -31,3 +31,12 @@
   height: 3rem;
   align-items: center;
 }
+
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx;
+  overflow:hidden;
+ border-radius: 50%;
+}
