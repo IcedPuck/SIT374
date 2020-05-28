@@ -1,6 +1,7 @@
-<!-- pages/cart/cart.wxml
-<view hover-class="none" hover-stop-propagation="false">
-  <view wx:for="{{carts}}" class="item-container">
+<!--<view  class="container">
+<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{carts}}" wx:key="">
+ 
+<view class="contentItem">
     <image class="image" src="{{item.image}}"></image>
     <view class="title">
       {{item.title}}
@@ -16,128 +17,52 @@
         +
       </view>
     </view>
-  </view>
-  <view class="button">
+</view>
+<view class="del" catchtap="del" data-index="{{index}}">删除</view>
+</view>
+</view>
+<view class="button">
     <button type="primary" bindtap="order">￥{{total}} Order</button>
-  </view>
 </view> -->
-<!--pages/cart/cart.wxml-->
-<view hover-class="none" hover-stop-propagation="false">
-
-  <image src='/img/course12.PNG' class="item"></image>
-
-  <view class="txt-box">
-
-    <view class="txt-box.oneline">
-      <text>Netrual network</text>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.describe">
-        <text> Neural networks can point to two types, one is a biological neural network, and the other is an artificial </text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.price">
-        <text>$300</text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.title">
-        <text>New release</text>
-      </view>
-    </view>
-  </view>
-
-  <image src='/img/course11.PNG' class="item"></image>
-  <view class="txt-box">
-
-    <view class="txt-box.oneline">
-      <text>Performance Collaboration</text>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.describe">
-        <text> In this course, your learners will gain essential skills to develop and expand their leadership repertoire.</text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.price">
-        <text>$100</text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.title">
-        <text>New release</text>
-      </view>
-    </view>
-  </view>
-
-  <image src='/img/course13.PNG' class="item"></image>
-  <view class="txt-box">
-
-    <view class="txt-box.oneline">
-      <text>Marketing</text>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.describe">
-        <text> Help your teams understand how digital tools are changing marketing by shifting the balance of power from firms to consumers. </text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.price">
-        <text>$150</text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.title">
-        <text>New release</text>
-      </view>
-    </view>
-  </view>
 
 
-  <image src='/img/course14.PNG' class="item"></image>
-  <view class="txt-box">
 
-    <view class="txt-box.oneline">
-      <text>Design Thinking</text>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.describe">
-        <text> Design thinking provides the tools your employees need to think like innovators and uncover creative opportunities.</text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.price">
-        <text>$200</text>
-      </view>
-    </view>
-
-    <view class="txt-box.oneline">
-      <view class=".txt-box.oneline.title">
-        <text>Best sellers</text>
-      </view>
-    </view>
-  </view>
-
-  <view class="button">
-    <button type="primary" bindtap="order">$ 750 Order</button>
-  </view>
   <!--
 上面是静态的代码动态的代码为
-<button type="primary" bindtap="order">￥{{total}} Order</button>
+ <button type="primary" bindtap="order">$ 750 Order</button>
 -->
+<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}  item-container" data-index=" {{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{carts}}" wx:key="">
+ <view class="content">
+ <view class='com'>
+ <view class='tp'>
+  <image src="{{item.image}}" class='img' />
+ </view>
+ <view class='txt-box'>
+  <view class='.txt-box.oneline'><text>{{item.title}}</text></view>
+  
+  <view class='bot'>
+  
+
+  <block>
+  <view class="pri">
+  <text class=".txt-box.oneline.price">￥{{item.price}}</text>
+  
+  </view>
+  
+  <navigator class='a'>
+  <label class='.txt-box.oneline.title'>Coupon available</label>
+  </navigator>
+  
+  </block>
 
 
-
+  </view>
+ </view>
+ </view>
+ </view>
+<view class="del" catchtap="del" data-index="{{index}}">DELETE</view>
+<view class="button">
+    <button type="primary" bindtap="order">￥{{total}} Order</button>
 </view>
+</view>
+

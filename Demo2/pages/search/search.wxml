@@ -4,7 +4,7 @@
     <button form-type="submit" type="primary">Search</button>
   </form>
   <view wx:for="{{list}}" wx:key="{{item._id}}" id="{{item._id}}" class="item-container" bindtap="toDetail">
-    <image lazy-load="true" mode="aspectFit" src="{{item.image}}"></image>
+    <image lazy-load="true" src="{{item.image}}" class='img'></image>
     <view class="content">
       <view class="title">{{item.title}}</view>
 

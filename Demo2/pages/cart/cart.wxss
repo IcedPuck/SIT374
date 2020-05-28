@@ -1,6 +1,18 @@
 /* pages/main/main.wxss */
 .item-container{
-  display: flex;
+  display: grid;
+  margin-top: 10rpx;
+  grid-template-columns:repeat(auto-fill,100px);/** 平铺宽度为100px的单元格 */
+  grid-template-rows: 100px;/** 设置高度为100px */
+  grid-auto-rows: 100px;/** 当容易高度不够时，多余的组件高度将怎么分配，默认的高度由单元格内容决定 */
+  justify-content: center;/** 水平居中  */
+  grid-gap: 10rpx;/** 水平和垂直间距为10rpx*/
+  
+  border: 2rpx solid #999999;
+  border-radius: 5%;
+}
+.content{
+  background-color:  #eeee;
 }
 .image{
   height: 100rpx;
@@ -8,18 +20,17 @@
   flex: 1;
 }
 
-.content{
-  flex:2;
-}
 .title{
   font-weight: blod;
   flex: 2;
 }
 .action{
   flex: 1;
+  
 }
 .action2{
   display: flex;
+  float: right;
   flex: 0.5;
 }
 .tag{
@@ -35,7 +46,7 @@
   background: red;
   border-radius: 40%;  
   color: white;
-  width: 30rpx;
+  width: 20rpx;
   height: 30rpx;
 }
 .slide-image{
@@ -94,7 +105,7 @@ more{
   width: 70%;
   float: left;
   height: 200rpx;
-  background-color:white;
+  background-color:#eeee;
   display: block;
 }
 .txt-box.oneline{
@@ -125,5 +136,158 @@ more{
   color:#2CDBE8;
   font-size: 30rpx;
   display: block;
+}
+
+.container{
+  padding: 0rpx;
+  width:100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom:10rpx;
+}
+.touch-item {
+ font-size: 14px;
+ display: flex;
+ /* //均匀排布每个元素 */
+ background: #fff;
+ justify-content: space-between;
+ border-bottom:1px solid rgb(243, 177, 177);
+ width: 100%;
+ overflow: hidden;
+}
+.contentItem {
+ width: 100%;
+ padding: 10px;
+ line-height: 22px;
+ margin-right:0;
+ -webkit-transition: all 0.4s;
+ transition: all 0.4s;
+ -webkit-transform: translateX(90px);
+ transform: translateX(90px);
+ margin-left: -90px;
+}
+.del {
+ background-color: #c00;
+ width: 100px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ -webkit-transform: translateX(90px);
+ transform: translateX(90px);
+ -webkit-transition: all 0.4s;
+ transition: all 0.4s;
+}
+/* .touch-move-active .content, */
+.touch-move-active .del {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.touch-item {
+ background-color: #fff;
+ margin-top: 20rpx;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ overflow: hidden;
+ box-sizing: border-box;
+}
+
+.content {
+ width: 100%;
+ -webkit-transition: all 0.4s;
+ transition: all 0.4s;
+ -webkit-transform: translateX(180rpx);
+ transform: translateX(180rpx);
+ margin-left: -180rpx;
+}
+
+.touch-move-active .content, .touch-move-active .del {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}
+
+.com {
+ 
+ height: 210rpx;
+}
+
+.tp {
+ background-color: #eeee;
+ float: left;
+}
+
+.img {
+ width: 210rpx;
+ height: 210rpx;
+ display: inline-block;
+ vertical-align: middle;
+ border-radius: 15rpx;
+}
+
+.txt {
+ width: 420rpx;
+ margin-left: 270rpx;
+ position: relative;
+}
+
+.txt .tit {
+ font-size: 28rpx;
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 2;
+ overflow: hidden;
+}
+
+.txt .bot {
+ width: 100%;
+ font-size: 24rpx;
+ margin-top: 20rpx;
+}
+
+.ti1 {
+ margin-top: 15rpx;
+ font-size: 23rpx;
+ background-color:#5abd8c;
+ padding: 10rpx;
+ display: inline-block;
+}
+
+.ti {
+ margin-top: 35rpx;
+ font-size: 28rpx;
+ display: inline-block;
+ color: #a2a2a2;
+}
+
+.del {
+ background-color: red;
+ width: 180rpx;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ -webkit-transform: translateX(180rpx);
+ transform: translateX(180rpx);
+ -webkit-transition: all 0.4s;
+ transition: all 0.4s;
 }
 
