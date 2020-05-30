@@ -4,7 +4,19 @@ App({
     this.setTabbar()
     //小程序初始化
     wx.cloud.init()
-
+    wx.cloud.callFunction({
+      name: 'login',
+      data: {},
+      success: res => {
+        // console.log('[云函数] [login] user openid: ', res.result.openid)
+        // app.globalData.openid = res.result.openid
+         this.globalData.openid = res.result.openid,
+          console.log(this.globalData.openid)
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
     const userInfo = wx.getStorageInfoSync('userInfo')//获取用户数据（头像）
     if(userInfo){
       this.globalData.userInfo = userInfo//用户数据实装
@@ -54,11 +66,13 @@ App({
       })
     }
   },
+  
   globalData: {
     userInfo: null,
     openid:null,
-    username:"Hello",
+    currentID:null,
     //获取数据
     carts:wx.getStorageSync('carts') || []
-  }
+  },
+  
 })

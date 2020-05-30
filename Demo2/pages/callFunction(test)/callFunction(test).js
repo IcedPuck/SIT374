@@ -8,10 +8,12 @@ Page({
   //   }).then(console.log)
   // }
   data:{
-
+    mes:{}
   },
   input:function(e){
-    app.globalData.username = "你好！"
+    this.setData({
+      
+    })
   },
   loadp:function(){
     console.log(app.globalData.username)

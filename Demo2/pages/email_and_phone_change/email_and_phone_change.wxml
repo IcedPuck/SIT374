@@ -1,17 +1,15 @@
 <!--pages/email_and_phone_change/email_and_phone_change.wxml-->
+<Select prop-array='{{selectArray}}' bind:myget='getDate'></Select>
 <view class="all">
   <form bindsubmit="searchBox">
     <view class="view">
       <text>Email：</text>
-      
-      <text class="{{visual}}">{{email}}</text>
-     
-      
+      <text>{{email}}</text>
       <input class="input" name="email"></input>
     </view>
     <view class="view">
       <text>Phone：</text>
-      <text class="{{visual}}">{{phone}}</text>
+      <text>{{phone}}</text>
       <input class="input" name="phone"></input>
       <button type="primary" form-type="submit" class="button">Submit</button>
             <text>{{item.id}}</text>
