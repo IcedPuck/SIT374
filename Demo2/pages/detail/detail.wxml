@@ -1,14 +1,33 @@
 <!--pages/detail/detail.wxml-->
-<view>详情页面</view>
 <view>
-  <image src="{{info.image}}" class="image"></image>
-  <view>
-    <view>{{info.tags}}</view>
-    <view>{{info.title}}</view>
-    <view>$ {{info.price}}</view>
-    <view>{{info.detail}}</view>
-  </view>
-</view>
-<view class="botton">
-<button type="primary" bindtap="order" class="buttom">立即下单</button>
+  <swiper indicator-dots="true" autoplay="true" interval="3500" indicator-active-color="red" circular="true">
+    <block wx:for="{{tops}}" wx:key="1">
+      <swiper-item>
+        <image style="margin: 1rem; width: 90%;" src="{{info.image}}" mode="aspectFit" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+        <view>
+      <text style="margin: 1rem; font-weight:bold;">{{info.tags}}</text>
+    </view>
+    <view>
+      <text style="margin: 1rem; font-weight:bold;">{{info.title}}</text>
+    </view>
+    <view>
+      <text style="margin: 1rem; font-size: 0.8rem">{{info.detail}}</text>
+    </view>
+      <view style="display: flex;margin-left: 1.2rem; height: auto; align:center; ">
+                  <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+                  <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+                      <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+                  <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starFull.png"></image>
+                        <image style=" width: 40rpx; height: 40rpx;" mode='aspectFill' src="../../img/starHalf.png"></image>
+                        <text style="color: #95979b; font-size: 30rpx; margin-top:10rpx; ">4.6 (21,181)</text>
+            </view>
+    <view>
+     <text style="margin: 1.2rem; font-size: 0.8rem; color: red;">Hot price: ${{info.price}}</text>
+    </view>
+    <view class="botton">
+      <button type="primary" bindtap="order" class="buttom">立即下单</button>
+    </view>
 </view>

@@ -8,7 +8,8 @@ Page({
    */
   data: {
     id: '',
-    info: {}
+    info: {},
+    tops: [1, 2, 3]
   },
   order() {
     wx.cloud.callFunction({
@@ -59,7 +60,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     this.setData({
       id: options.id
     })
